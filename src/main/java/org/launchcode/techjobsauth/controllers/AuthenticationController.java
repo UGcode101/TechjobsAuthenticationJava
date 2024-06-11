@@ -1,9 +1,9 @@
 package org.launchcode.techjobsauth.controllers;
 
-import org.launchcode.techjobsauth.data.UserRepository;
+import org.launchcode.techjobsauth.models.data.UserRepository;
 import org.launchcode.techjobsauth.models.User;
-import org.launchcode.techjobsauth.models.dto.LoginFormDTO;
-import org.launchcode.techjobsauth.models.dto.RegisterFormDTO;
+import org.launchcode.techjobsauth.models.DTO.LoginFormDTO;
+import org.launchcode.techjobsauth.models.DTO.RegisterFormDTO;
 import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

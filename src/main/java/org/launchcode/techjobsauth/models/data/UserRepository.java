@@ -1,7 +1,9 @@
 package org.launchcode.techjobsauth.models.data;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.launchcode.techjobsauth.models.User;
+import org.springframework.data.repository.CrudRepository;
+
 import java.util.Optional;
 
-public interface UserRepository extends JpaRepository<User, Long> {
-    Optional<User> findByUsername(String username);
+public interface UserRepository extends CrudRepository<User, Integer> {
+    User findByUsername(String username);
 }
