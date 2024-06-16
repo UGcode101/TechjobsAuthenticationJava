@@ -38,4 +38,8 @@ public class User extends AbstractEntity {
     public boolean checkPassword(String password) {
         return encoder.matches(password, this.password);
     }
+
+    public boolean isMatchingPassword(String password) {
+        return false;
+    }
 }
